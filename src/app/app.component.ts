@@ -15,4 +15,9 @@ export class AppComponent {
   constructor() {
     this.ages = range(1, 115).pipe(map(num => num), toArray());
   }
+
+  onAgeChange(age: number): void {
+    this.selectedAge = age;
+    console.log(this.selectedAge);
+  }
 }

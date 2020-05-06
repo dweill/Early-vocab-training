@@ -7,7 +7,7 @@
 <div class="flex-container">
   <mat-form-field>
     <mat-label>age</mat-label>
-    <mat-select [(ngModel)]="selectedAge">
+    <mat-select [ngModel]="selectedAge" (ngModelChange)="onAgeChange($event)">
       <mat-option *ngFor="let age of ages | async" [value]="age">
         {{age}}
       </mat-option>
