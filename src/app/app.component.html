@@ -8,7 +8,7 @@
   <mat-form-field>
     <mat-label>age</mat-label>
     <mat-select [(ngModel)]="selectedAge">
-      <mat-option *ngFor="let age of ages" [value]="age">
+      <mat-option *ngFor="let age of ages | async" [value]="age">
         {{age}}
       </mat-option>
     </mat-select>
