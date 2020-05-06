@@ -1,3 +1,16 @@
-<div id="welcomeMessageContainer" class="roboto">
+<div class="flex-container">
   <h1 id="welcomeMessage">Welcome to Early Vocab Training</h1>
+</div>
+<div class="flex-container">
+  <h4>Select an age to load vocab words</h4>
+</div>
+<div class="flex-container">
+  <mat-form-field>
+    <mat-label>age</mat-label>
+    <mat-select [(ngModel)]="selectedAge">
+      <mat-option *ngFor="let age of ages" [value]="age">
+        {{age}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
 </div>

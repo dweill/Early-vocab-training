@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { range, Observable } from 'rxjs';
+import { map, toArray } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Early-vocab-training';
+  selectedAge: number;
+  ages: Observable<number[]>;
+
+  constructor() {
+    this.ages = range(1, 115).pipe(map(num => num), toArray());
+  }
 }
