@@ -4,17 +4,21 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { MatCardModule } from '@angular/material/card';
 import { MatSelectModule } from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
+import { VocabCardComponent } from './vocab-card/vocab-card.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    VocabCardComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
+    MatCardModule,
     MatSelectModule
   ],
   providers: [],
