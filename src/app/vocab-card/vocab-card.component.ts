@@ -30,6 +30,7 @@ export class VocabCardComponent implements OnInit {
   }
 
   speak(message): void {
+    speechSynthesis.cancel();
     try {
       speechSynthesis.speak(message);
     } catch (e) {
