@@ -1,5 +1,10 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .card {
-  margin: 1rem;
   padding: 1rem;
   width: 15rem;
   border: solid black .25rem
@@ -18,4 +23,9 @@
 .mat-card-actions {
   display: flex;
   justify-content: center;
+}
+
+.btn {
+  margin: 0 .5rem;
+  width: 100%;
 }

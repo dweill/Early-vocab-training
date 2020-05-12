@@ -14,6 +14,8 @@
     </mat-select>
   </mat-form-field>
 </div>
-<div class="flex-container" *ngFor="let vocabWord of vocabWords">
-  <app-vocab-card [vocabWord]="vocabWord"></app-vocab-card>
+<div class="grid-container">
+  <section class="vocab-grid">
+    <app-vocab-card *ngFor="let vocabWord of vocabWords" [vocabWord]="vocabWord"></app-vocab-card>
+  </section>
 </div>

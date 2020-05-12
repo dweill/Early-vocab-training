@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-vocab-card',
@@ -22,8 +22,8 @@ export class VocabCardComponent implements OnInit {
 
   spellWord(): void {
     const message = new SpeechSynthesisUtterance(`
-    ${this.vocabWord.word},
-    ${this.vocabWord.word.split('').join(',')},
+    ${this.vocabWord.word},!
+    ${this.vocabWord.word.split('').join(',!')},!
     ${this.vocabWord.word}`);
     this.speak(message);
   }

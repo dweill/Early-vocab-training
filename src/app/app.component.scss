@@ -1,5 +1,9 @@
-.flex-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.vocab-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.grid-container {
+  margin: 0 1.5rem;
 }
