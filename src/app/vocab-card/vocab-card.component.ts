@@ -21,6 +21,7 @@ export class VocabCardComponent implements OnInit {
   }
 
   spellWord(): void {
+    // Speech synthesis api reads ! as a delay so I peppered it in to slow the spelling.
     const message = new SpeechSynthesisUtterance(`
     ${this.vocabWord.word},!
     ${this.vocabWord.word.split('').join(',!')},!

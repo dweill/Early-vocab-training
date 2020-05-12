@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { range, Observable } from 'rxjs';
+import { Observable, range } from 'rxjs';
 import { map, toArray } from 'rxjs/operators';
 import { VocabService } from './vocab-card/vocab.service';
 
@@ -20,7 +20,6 @@ export class AppComponent {
 
   onAgeChange(age: number): void {
     this.selectedAge = age;
-    console.log(this.selectedAge);
     this.vocabWords = this.vocabService.getVocabByAge(this.selectedAge);
   }
 }
