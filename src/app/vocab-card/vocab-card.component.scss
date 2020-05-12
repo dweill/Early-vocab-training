@@ -7,8 +7,9 @@
 .card {
   padding: 1rem;
   width: 15rem;
-  border: solid black .25rem;
-  background-color: #c299d6;
+  // border: solid #c299d6 .25rem;
+  // background-color: #c299d6;
+  background-image: linear-gradient(to top right, #E8DAEF, #c299d6);
 }
 
 .mat-card-header-text {
