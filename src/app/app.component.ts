@@ -15,7 +15,7 @@ export class AppComponent {
   vocabWords: any = [];
 
   constructor(private vocabService: VocabService) {
-    this.ages = range(1, 115).pipe(map(num => num), toArray());
+    this.ages = range(2, 3).pipe(map(num => num), toArray());
   }
 
   onAgeChange(age: number): void {

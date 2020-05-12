@@ -19,7 +19,7 @@
 <div class="grid-container" *ngIf="selectedAge">
   <section class="vocab-grid">
     <app-vocab-card *ngFor="let vocabWord of vocabWords | async" [vocabWord]="vocabWord"></app-vocab-card>
-    <div class="flex-container" *ngIf="vocabWords.length < 1">
+    <div class="flex-container" *ngIf="!(vocabWords | async)?.length">
       <h1>COMING SOON</h1>
     </div>
   </section>
