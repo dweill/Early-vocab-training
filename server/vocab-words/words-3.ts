@@ -1,4 +1,4 @@
-import { VocabWord } from "../models/vocab-words/vocab-word";
+import { VocabWord } from '../interfaces/vocab-words/vocab-word';
 
 export const vocabWords: VocabWord[] = [
       'about',
@@ -358,4 +358,8 @@ export const vocabWords: VocabWord[] = [
       'yesterday',
       'you',
       'your',
-].map(text => new VocabWord(text));
+].map(text => {
+      return {
+            word: text
+      };
+});

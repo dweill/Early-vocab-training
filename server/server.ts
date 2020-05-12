@@ -1,5 +1,5 @@
 import express from 'express';
-import { VocabWord } from './models/vocab-words/vocab-word';
+import { VocabWord } from './interfaces/vocab-words/vocab-word';
 import { vocabWords as vocabWords3 } from './vocab-words/words-3';
 
 const port = process.env.PORT || 3000;
