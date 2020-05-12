@@ -4,6 +4,13 @@
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
+#welcomeToolbar {
+  justify-content: center;
+  padding: 3rem;
+  background-image: repeating-linear-gradient(to right, #E8DAEF, #c299d6, #E8DAEF);;
+  margin-bottom: 2rem;
+}
+
 #welcomeMessage {
   font-size: 3rem;
   margin: 2rem;
