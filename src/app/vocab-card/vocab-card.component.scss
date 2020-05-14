@@ -6,8 +6,10 @@
 
 .card {
   padding: 1rem;
-  width: 15rem;
   background-image: linear-gradient(to top right, #E8DAEF, #c299d6);
+  // background-color: white;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
 }
 
 .mat-card-header-text {
@@ -17,7 +19,16 @@
 .mat-card-header {
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
+  padding: 2rem;
+}
+
+.mat-card-title {
+  font-size: 2rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mat-card-actions {

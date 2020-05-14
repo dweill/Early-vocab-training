@@ -1,9 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
-html, body { height: 100%; }
+html,
+body {
+  height: 100%;
+}
 html {
   scroll-behavior: auto;
 }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;  background-color: #e8daef;}
+body {
+  margin: 0;
+  font-family: "Staatliches", cursive;
+  background-color: #e8daef;
+}
 .flex-container {
   display: flex;
   justify-content: center;

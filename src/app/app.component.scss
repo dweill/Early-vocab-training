@@ -1,21 +1,26 @@
 .vocab-grid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
 
 #welcomeToolbar {
-  justify-content: center;
+  justify-content: flex-start;
   padding: 3rem;
-  background-image: repeating-linear-gradient(to right, #E8DAEF, #c299d6, #E8DAEF);;
+  background-image: repeating-linear-gradient(to right, #e8daef, #c299d6, #e8daef);
   margin-bottom: 2rem;
 }
 
 #welcomeMessage {
   font-size: 3rem;
   margin: 2rem;
+  font-family: "Staatliches", cursive;
 }
 
 .grid-container {
   margin: 0 1.5rem;
+}
+
+#ageHeader {
+  font-size: 2rem;
 }

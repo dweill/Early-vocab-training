@@ -4,12 +4,12 @@
   </mat-toolbar>
 </div>
 <div class="flex-container">
-  <h4>Select an age to load vocab words</h4>
+  <h4 id="ageHeader">Select an age to load vocab words</h4>
 </div>
 <div class="flex-container">
   <mat-form-field>
-    <mat-label>age</mat-label>
-    <mat-select [ngModel]="selectedAge" (ngModelChange)="onAgeChange($event)">
+    <mat-label id="ageLabel">age</mat-label>
+    <mat-select [ngModel]="selectedAge" (ngModelChange)="onAgeChange($event)" id="ageDropdown">
       <mat-option *ngFor="let age of ages | async" [value]="age">
         {{age}}
       </mat-option>

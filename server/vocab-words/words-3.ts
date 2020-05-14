@@ -1,4 +1,5 @@
 import { VocabWord } from '../interfaces/vocab-words/vocab-word';
+import { StringUtil } from '../util/string-util';
 
 export const vocabWords: VocabWord[] = [
       'about',
@@ -360,6 +361,6 @@ export const vocabWords: VocabWord[] = [
       'your',
 ].map(text => {
       return {
-            word: text
+            word: StringUtil.capitalizeFirstLetter(text)
       };
 });
