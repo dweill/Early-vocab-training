@@ -9,10 +9,16 @@ html {
 body {
   margin: 0;
   font-family: "Staatliches", cursive;
-  background-color: #e8daef;
+  background-color: #9C8BA1;
 }
 .flex-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.color-primary-0 { color: #816888 }	/* Main Primary color */
+.color-primary-1 { color: #C6BDC8 }
+.color-primary-2 { color: #9C8BA1 }
+.color-primary-3 { color: #6A4B73 }
+.color-primary-4 { color: #53335C }

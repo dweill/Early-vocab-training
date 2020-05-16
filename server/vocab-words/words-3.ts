@@ -359,7 +359,11 @@ export const vocabWords: VocabWord[] = [
       'yesterday',
       'you',
       'your',
-].map(text => {
+]
+.sort((a, b): number => {
+      return a.length >= b.length ? 1 : -1;
+})
+.map((text: string) => {
       return {
             word: StringUtil.capitalizeFirstLetter(text)
       };
