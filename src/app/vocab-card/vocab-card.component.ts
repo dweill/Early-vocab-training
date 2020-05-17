@@ -1,26 +1,26 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-vocab-card',
   templateUrl: './vocab-card.component.html',
   styleUrls: ['./vocab-card.component.scss']
 })
-export class VocabCardComponent implements OnInit {
+export class VocabCardComponent {
 
   @Input()
   vocabWord: any;
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
 
-  sayWord(): void {
+  sayWord($event: MouseEvent): void {
+    $event.stopPropagation();
     const message = new SpeechSynthesisUtterance(this.vocabWord.word);
     this.speak(message);
   }
 
-  spellWord(): void {
+  spellWord($event: MouseEvent): void {
+    $event.stopPropagation();
     // Speech synthesis api reads ! as a delay so I peppered it in to slow the spelling.
     const message = new SpeechSynthesisUtterance(`
     ${this.vocabWord.word},!

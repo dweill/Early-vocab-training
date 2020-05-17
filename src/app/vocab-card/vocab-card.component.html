@@ -1,13 +1,13 @@
 <div class="card-container">
-  <mat-card class="card">
+  <mat-card class="card clickable">
     <mat-card-header>
       <mat-card-title>
         {{vocabWord.word}}
       </mat-card-title>
     </mat-card-header>
     <mat-card-actions>
-      <button mat-raised-button class="btn" (click)="sayWord()">SAY</button>
-      <button mat-raised-button class="btn" (click)="spellWord()">SPELL</button>
+      <button mat-raised-button class="btn" (click)="sayWord($event)">SAY</button>
+      <button mat-raised-button class="btn" (click)="spellWord($event)">SPELL</button>
     </mat-card-actions>
   </mat-card>
 </div>
