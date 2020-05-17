@@ -8,9 +8,9 @@ export class VocabService {
 
   constructor(private http: HttpClient) { }
 
-  getVocabByAge(age: number): any {
+  getVocabByAge(): any {
     try {
-      return this.http.get('http://localhost:4200/api/words', {params: { age: `${age}` }});
+      return this.http.get('http://localhost:4200/api/words');
     } catch (e) {
       console.error(e);
     }

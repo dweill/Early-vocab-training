@@ -3,20 +3,7 @@
     <h1 id="welcomeMessage">Early Vocab Training</h1>
   </mat-toolbar>
 </div>
-<div class="flex-container">
-  <h4 id="ageHeader">Select an age to load vocab words</h4>
-</div>
-<div class="flex-container">
-  <mat-form-field>
-    <mat-label id="ageLabel">age</mat-label>
-    <mat-select [ngModel]="selectedAge" (ngModelChange)="onAgeChange($event)" id="ageDropdown">
-      <mat-option *ngFor="let age of ages | async" [value]="age">
-        {{age}}
-      </mat-option>
-    </mat-select>
-  </mat-form-field>
-</div>
-<div class="grid-container" *ngIf="selectedAge">
+<div class="grid-container">
   <section class="vocab-grid">
     <app-vocab-card *ngFor="let vocabWord of vocabWords | async" [vocabWord]="vocabWord"></app-vocab-card>
     <div class="flex-container" *ngIf="!(vocabWords | async)?.length">
