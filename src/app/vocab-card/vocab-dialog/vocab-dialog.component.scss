@@ -1,0 +1,15 @@
+.card-container {
+  height: 100%;
+  .card {
+    height: 100%;
+    .mat-card-header {
+      height: 70%;
+      .mat-card-title {
+        font-size: 10rem;
+      }
+    }
+    .mat-card-actions {
+      align-items: flex-end;
+    }
+  }
+}
