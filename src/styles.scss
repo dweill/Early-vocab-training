@@ -9,7 +9,9 @@ html {
 body {
   margin: 0;
   font-family: "Staatliches", cursive;
-  background-color: #e8daef;;
+  --dark-purple: #c299d6;
+  --light-purple: #e8daef;
+  background-color: var(--light-purple);
 }
 .flex-container {
   display: flex;
