@@ -11,10 +11,14 @@ body {
   font-family: "Staatliches", cursive;
   --dark-purple: #c299d6;
   --light-purple: #e8daef;
-  background-color: var(--light-purple);
+  background-color: rgb(242, 241, 241);
 }
 .flex-container {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.clickable {
+  cursor: pointer;
 }

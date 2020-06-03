@@ -2,14 +2,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform .2s ease-in-out;
+  border-left: .0 solid var(--dark-purple);
+  &:hover {
+    transform: scaleX(1.1);  
+    border-width: .3rem
+  }
+  .card {
+    padding: 1rem;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+  }
 }
 
-.card {
-  padding: 1rem;
-  background-color: var(--dark-purple);
-  width: 100%;
-  font-family: 'Poppins', sans-serif;
-}
 
 .mat-card-header-text {
   margin: 0;
@@ -30,18 +35,3 @@
   align-items: center;
 }
 
-.mat-card-actions {
-  display: flex;
-  justify-content: center;
-}
-
-.btn {
-  margin: 0 .5rem;
-  width: 100%;
-  background-color: var(--light-purple);
-  
-}
-
-.clickable {
-  cursor: pointer;
-}
