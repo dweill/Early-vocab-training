@@ -12,25 +12,27 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/compression": "^1.7.0",
     "@types/express": "^4.17.6",
     "@types/node": "^13.13.5",
     "nodemon": "^2.0.3",
     "ts-node": "^8.10.1"
   },
   "dependencies": {
+    "compression": "^1.7.4",
     "express": "^4.17.1",
     "typescript": "^3.8.3"
   },
   "nodemonConfig": {
     "ignore": [
-    "**/*.test.ts",
-    "**/*.spec.ts",
-    ".git"
+      "**/*.test.ts",
+      "**/*.spec.ts",
+      ".git"
     ],
     "watch": [
-    "./server.ts"
+      "./server.ts"
     ],
     "exec": "npm start",
     "ext": "ts"
-    }
+  }
 }
